@@ -1,0 +1,11 @@
+创建 pjlib/include/pj/config_site.h 
+
+添加
+/* Activate Android specific settings in the 'config_site_sample.h' */
+#define PJ_CONFIG_ANDROID 1
+#include <pj/config_site_sample.h>
+
+
+## 编译
+# export ANDROID_NDK_ROOT=/path_to_android_ndk_dir
+# APP_PLATFORM="android-21" TARGET_ABI=armeabi-v7a
