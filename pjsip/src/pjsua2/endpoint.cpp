@@ -2215,13 +2215,18 @@ TransportId Endpoint::transportCreate(pjsip_transport_type_e type,
                                       const TransportConfig &cfg)
     PJSUA2_THROW(Error)
 {
+
+    std::cout << "transportCreate start port " << cfg.port << " address "
+              << cfg.publicAddress << " bound " << cfg.boundAddress << std::endl;
     pjsua_transport_config tcfg;
     pjsua_transport_id tid;
 
     tcfg = cfg.toPj();
+
     PJSUA2_CHECK_EXPR(pjsua_transport_create(type,
                                              &tcfg, &tid));
 
+    std::cout << "transportCreate tid " << tid << std::endl;
     return tid;
 }
 
