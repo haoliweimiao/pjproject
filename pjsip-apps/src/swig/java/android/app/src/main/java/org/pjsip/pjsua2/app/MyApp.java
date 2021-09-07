@@ -343,7 +343,7 @@ class MyApp extends pjsua2 {
         epConfig.getLogConfig().setLevel(LOG_LEVEL);
         epConfig.getLogConfig().setConsoleLevel(LOG_LEVEL);
         // TODO: 2021/9/7 没啥用
-        epConfig.getMedConfig().setEcOptions(pjmedia_echo_flag.PJMEDIA_ECHO_WEBRTC);
+//        epConfig.getMedConfig().setEcOptions(pjmedia_echo_flag.PJMEDIA_ECHO_WEBRTC);
 //        epConfig.getMedConfig().setEcTailLen();
 
         /* Set log config. */
@@ -466,6 +466,10 @@ class MyApp extends pjsua2 {
 
             /* Read endpoint config */
             epConfig.readObject(root);
+
+//            epConfig.getMedConfig().setEcOptions(pjmedia_echo_flag.PJMEDIA_ECHO_WEBRTC|
+//                    pjmedia_echo_flag.PJMEDIA_ECHO_USE_NOISE_SUPPRESSOR|
+//                    pjmedia_echo_flag.PJMEDIA_ECHO_AGGRESSIVENESS_AGGRESSIVE);
 
             /* Read transport config */
             ContainerNode tp_node = root.readContainer("SipTransport");

@@ -188,7 +188,6 @@ public class MainActivity extends Activity
             android.os.Process.killProcess(android.os.Process.myPid());
 
         } else if (m.what == MSG_TYPE.CALL_STATE) {
-
             CallInfo ci = (CallInfo) m.obj;
 
             if (currentCall == null || ci == null || ci.getId() != currentCall.getId()) {
@@ -321,7 +320,7 @@ public class MainActivity extends Activity
             etPass.setText("");
         }
 
-        final String accountSting = "3245";
+        final String accountSting = "3265";
         etId.setText("sip:" + accountSting + "@192.168.200.201:5060");
         etReg.setText("sip:192.168.200.201:5060");
         // TODO: 2021/9/7 不设置代码，没有代理服务器
