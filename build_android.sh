@@ -10,3 +10,4 @@ NDK_TOOLCHAIN_VERSION=4.9 \
 APP_PLATFORM=android-22 \
 source ${pjsip_path}/configure-android --use-ndk-cflags \
 --with-openh264=${openh264_lib_path}
+--with-opus=${pjsip_path}/opus-dev-lib/${TARGET_ABI}/

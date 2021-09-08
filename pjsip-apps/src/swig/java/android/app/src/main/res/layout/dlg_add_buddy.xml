@@ -13,7 +13,7 @@
             android:id="@+id/editTextUri"
             android:layout_weight="1"
             android:inputType="textUri|textEmailAddress"
-            android:text="sip:3264@192.168.200.201:5060">
+            android:text="sip:1@192.168.0.197:6000">
 
             <requestFocus />
         </EditText>

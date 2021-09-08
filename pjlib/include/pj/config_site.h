@@ -10,6 +10,6 @@
 #define PJMEDIA_HAS_LIBYUV 1
 
 //To enable TCP transport
-#define PJ_HAS_TCP 1
+// #define PJ_HAS_TCP 1
 
 #include <pj/config_site_sample.h>
