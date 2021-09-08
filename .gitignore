@@ -1,4 +1,4 @@
-@REM pjlib/include/pj/config_site.h
+# pjlib/include/pj/config_site.h
 lib/
 bin/
 output/
