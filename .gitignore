@@ -1,7 +1,8 @@
 # pjlib/include/pj/config_site.h
-lib/
+# lib/
 bin/
 output/
+*.a
 
 # VS stuff
 *.ncb

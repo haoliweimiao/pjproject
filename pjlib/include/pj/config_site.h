@@ -9,6 +9,9 @@
 //To enable libyuv
 #define PJMEDIA_HAS_LIBYUV 1
 
+// 需要添加opus音频编解码器支持时定义该项
+// #define PJMEDIA_HAS_OPUS_CODEC 1
+
 //To enable TCP transport
 // #define PJ_HAS_TCP 1
 
